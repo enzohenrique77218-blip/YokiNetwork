@@ -4,7 +4,7 @@ import websockets
 import json
 
 async def connect():
-    uri = "ws://localhost:8000/ws"
+    uri = "wss://yokinetwork.onrender.com/ws"
 
     async with websockets.connect(uri) as ws:
         response = await ws.recv()
